@@ -1,5 +1,17 @@
 // AVL Tree implementation
 
+/*
+How Does Memory Fragmentation Affect AVL Tree vs. Heap?
+✅ Why AVL Tree May Reduce Fragmentation
+AVL trees allocate each node separately (each with left/right pointers).
+There is no need for continuous memory blocks.
+No resizing operations (unlike dynamic arrays used in heaps).
+❌ Why Heap May Cause More Fragmentation
+If the heap is array-based, memory is allocated in a contiguous block.
+When elements are inserted/deleted, the array may resize or shift, leading to gaps.
+Over time, frequent reallocations can cause fragmentation, making it inefficient in long-running applications.
+*/
+
 #include <iostream>
 using namespace std;
 
